@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setFixedSize(272, 276);
 }
 
 MainWindow::~MainWindow()
@@ -72,4 +73,5 @@ void MainWindow::on_pushButton_clicked()
         saveIntToFile("varTeam2Score");
     }
     saveVarToFile("varCaster");
+    saveVarToFile("varTourDescript");
 }
