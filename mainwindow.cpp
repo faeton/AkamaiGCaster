@@ -63,13 +63,17 @@ void MainWindow::on_pushButton_clicked()
     if( ui->varSwapTeams->isChecked() ) {
         // swap teams
         saveVarToFile("varTeam1", "varTeam2");
+        saveVarToFile("varTeam1Rate", "varTeam2Rate");
         saveIntToFile("varTeam1Score", "varTeam2Score");
         saveVarToFile("varTeam2", "varTeam1");
+        saveVarToFile("varTeam2Rate", "varTeam1Rate");
         saveIntToFile("varTeam2Score", "varTeam1Score");
     } else {
         saveVarToFile("varTeam1");
+        saveVarToFile("varTeam1Rate");
         saveIntToFile("varTeam1Score");
         saveVarToFile("varTeam2");
+        saveVarToFile("varTeam2Rate");
         saveIntToFile("varTeam2Score");
     }
     saveVarToFile("varCaster");
